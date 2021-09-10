@@ -1,0 +1,17 @@
+[Unit]
+Description=PERSONAL_WEBSITE-uWSGI-instance
+After=network.target postgresql-11.service
+
+[Service]
+User=centos
+Group=nginx
+WorkingDirectory=/opt/PERSONAL_WEBSITE
+Environment="PATH=/opt/PERSONAL_WEBSITE/venv/bin"
+ExecStart=/opt/PERSONAL_WEBSITE/venv/bin/uwsgi --ini /opt/PERSONAL_WEBSITE/uwsgi/uwsgi.ini
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
