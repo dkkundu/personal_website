@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 # PYTHON IMPORTS
 import os
+import django_heroku
 # PROJECT IMPORTS
 from PERSONAL_WEBSITE.local_settings import (
     SECRET_KEY, TEMPLATES_DIR, STATICFILES_DIR, STATIC_DIR, MEDIA_DIR,
@@ -320,5 +321,7 @@ CELERY_CACHE_BACKEND = os.getenv(
 DBBACKUP_STORAGE = 'django.core.files.storage.FileSystemStorage'
 DBBACKUP_STORAGE_OPTIONS = {'location': 'backup/'}
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-heroku config:set DEBUG_COLLECTSTATIC=1
-heroku config:set DISABLE_COLLECTSTATIC=1
+# heroku config:set DEBUG_COLLECTSTATIC=1
+# heroku config:set DISABLE_COLLECTSTATIC=1
+# Activate Django-Heroku.
+django_heroku.settings(locals())
