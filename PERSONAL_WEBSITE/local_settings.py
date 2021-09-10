@@ -21,13 +21,14 @@ LOGS_DIR = os.path.join(BASE_DIR, "logs")
 SECRET_KEY = 'django-insecure-+#4o+jz=8x9dzsb7iemb(^sz+zl_4wt*83qcqr+vy1i7e#c(@)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Add domain name, i.e. example.com
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    '*',
+    'https://dkkundu.herokuapp.com/',
+    'dkkundu.tech'
     # add project domain here
 ]
 
