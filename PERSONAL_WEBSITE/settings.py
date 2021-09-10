@@ -120,6 +120,7 @@ MIDDLEWARE = [
     'django_prometheus.middleware.PrometheusBeforeMiddleware',  # prometheus
     'debug_toolbar.middleware.DebugToolbarMiddleware',  # debug_toolbar
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',  # corsheaders
     'django.middleware.common.CommonMiddleware',
