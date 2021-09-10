@@ -239,9 +239,24 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images) --------------------------------------
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATIC_ROOT = STATIC_DIR  # production, don't forget to run collectstatic
-STATICFILES_DIRS = [STATICFILES_DIR, ]  # development environment
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+
+# STATIC_URL = '/static/'
+# STATIC_ROOT = STATIC_DIR  # production, don't forget to run collectstatic
+# STATICFILES_DIRS = [STATICFILES_DIR, ]  # development environment
+
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = MEDIA_DIR
@@ -304,3 +319,6 @@ CELERY_CACHE_BACKEND = os.getenv(
 
 DBBACKUP_STORAGE = 'django.core.files.storage.FileSystemStorage'
 DBBACKUP_STORAGE_OPTIONS = {'location': 'backup/'}
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+heroku config:set DEBUG_COLLECTSTATIC=1
+heroku config:set DISABLE_COLLECTSTATIC=1

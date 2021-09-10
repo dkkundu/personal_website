@@ -1,0 +1,307 @@
+2021-09-10 22:20:30,569 INFO autoreload 50050 140490516535104 Watching for file changes with StatReloader
+2021-09-10 22:21:34,554 DEBUG user 50088 140173403830080 UserManager.create_superuser Creating superuser: email=dkkundu00@gmail.com, extra_fields={'is_staff': True, 'is_superuser': True}
+2021-09-10 22:21:34,555 DEBUG user 50088 140173403830080 UserManager._create_user Normalized email: dkkundu00@gmail.com
+2021-09-10 22:21:34,813 DEBUG profile 50088 140173403830080 create_or_update_profile Creating dkkundu00@gmail.com's profile
+2021-09-10 22:21:34,827 DEBUG profile 50088 140173403830080 create_or_update_profile Saving dkkundu00@gmail.com's profile
+2021-09-10 22:21:34,835 DEBUG user 50088 140173403830080 UserManager._create_user User created: dkkundu00@gmail.com
+2021-09-10 22:21:47,648 INFO autoreload 50105 140295876769600 Watching for file changes with StatReloader
+2021-09-10 22:21:52,003 ERROR exception 50105 140295762769664 Invalid HTTP_HOST header: '0.0.0.0:9000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2021-09-10 22:21:52,305 WARNING log 50105 140295762769664 Bad Request: /
+2021-09-10 22:22:37,140 INFO autoreload 50105 140295876769600 /media/dipto/DK/Projects/MY-personal/personal-website/PERSONAL_WEBSITE/local_settings.py changed, reloading.
+2021-09-10 22:22:42,836 INFO autoreload 50492 140534213957440 Watching for file changes with StatReloader
+2021-09-10 22:25:11,261 INFO autoreload 50492 140534213957440 /media/dipto/DK/Projects/MY-personal/personal-website/PERSONAL_WEBSITE/settings.py changed, reloading.
+2021-09-10 22:25:13,698 INFO autoreload 50796 139984577492800 Watching for file changes with StatReloader
+2021-09-10 22:29:22,766 INFO autoreload 50796 139984577492800 /media/dipto/DK/Projects/MY-personal/personal-website/PERSONAL_WEBSITE/settings.py changed, reloading.
+2021-09-10 22:29:24,798 INFO autoreload 51379 140174363506496 Watching for file changes with StatReloader
+2021-09-10 22:31:08,189 INFO autoreload 51587 139852552308544 Watching for file changes with StatReloader
+2021-09-10 22:31:16,810 ERROR log 51587 139852438046464 Internal Server Error: /
+Traceback (most recent call last):
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: mainpage_project
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/test/utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/defaulttags.py", line 168, in render
+    len_values = len(values)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1169, in execute_sql
+    cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 198, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 133, in _record
+    return method(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: mainpage_project
+2021-09-10 22:34:06,049 INFO autoreload 52040 140037637674816 Watching for file changes with StatReloader
+2021-09-10 22:34:21,785 ERROR log 52040 140037522626304 Internal Server Error: /
+Traceback (most recent call last):
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: mainpage_project
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/test/utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/defaulttags.py", line 168, in render
+    len_values = len(values)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1169, in execute_sql
+    cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 198, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 133, in _record
+    return method(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: mainpage_project
+2021-09-10 22:37:25,230 INFO autoreload 52040 140037637674816 /media/dipto/DK/Projects/MY-personal/personal-website/mainpage/urls.py changed, reloading.
+2021-09-10 22:37:29,223 INFO autoreload 52448 139955627009856 Watching for file changes with StatReloader
+2021-09-10 22:37:53,917 INFO autoreload 52448 139955627009856 /media/dipto/DK/Projects/MY-personal/personal-website/mainpage/urls.py changed, reloading.
+2021-09-10 22:37:58,362 INFO autoreload 52501 139967132055360 Watching for file changes with StatReloader
+2021-09-10 22:38:11,193 ERROR log 52501 139966944376576 Internal Server Error: /
+Traceback (most recent call last):
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: mainpage_project
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/test/utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/template/defaulttags.py", line 168, in render
+    len_values = len(values)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1169, in execute_sql
+    cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 198, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 133, in _record
+    return method(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: mainpage_project
+2021-09-10 22:39:29,063 DEBUG profile 52501 139966927591168 create_or_update_profile Saving dkkundu00@gmail.com's profile
+2021-09-10 22:39:39,436 ERROR log 52501 139966927591168 Internal Server Error: /manage/mainpage/project/
+Traceback (most recent call last):
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: mainpage_project
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1695, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/contrib/admin/options.py", line 736, in get_changelist_instance
+    return ChangeList(
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 100, in __init__
+    self.get_results(request)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 235, in get_results
+    result_count = paginator.count
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/core/paginator.py", line 97, in count
+    return c()
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/query.py", line 412, in count
+    return self.query.get_count(using=self.db)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/sql/query.py", line 526, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/sql/query.py", line 511, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1169, in execute_sql
+    cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 198, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py", line 133, in _record
+    return method(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/dipto/DK/Projects/MY-personal/personal-website/dj/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: mainpage_project
+2021-09-10 23:05:22,917 INFO autoreload 55267 140268215981888 Watching for file changes with StatReloader
+2021-09-10 23:06:23,718 INFO autoreload 55267 140268215981888 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:06:29,337 INFO autoreload 55506 140131402245952 Watching for file changes with StatReloader
+2021-09-10 23:06:42,395 INFO autoreload 55506 140131402245952 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:06:47,405 INFO autoreload 55549 140383615276864 Watching for file changes with StatReloader
+2021-09-10 23:07:23,470 INFO autoreload 55549 140383615276864 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:07:29,213 INFO autoreload 55561 139854146074432 Watching for file changes with StatReloader
+2021-09-10 23:07:37,748 INFO autoreload 55561 139854146074432 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:07:43,094 INFO autoreload 55641 140638628099904 Watching for file changes with StatReloader
+2021-09-10 23:07:59,313 INFO autoreload 55641 140638628099904 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:08:03,881 INFO autoreload 55827 140277865682752 Watching for file changes with StatReloader
+2021-09-10 23:08:10,244 INFO autoreload 55827 140277865682752 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:08:14,334 INFO autoreload 55831 139999625525056 Watching for file changes with StatReloader
+2021-09-10 23:08:23,047 INFO autoreload 55831 139999625525056 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:08:27,275 INFO autoreload 55853 140115934652224 Watching for file changes with StatReloader
+2021-09-10 23:08:51,199 INFO autoreload 55853 140115934652224 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:08:55,525 INFO autoreload 55877 140441052108608 Watching for file changes with StatReloader
+2021-09-10 23:10:26,030 INFO autoreload 55877 140441052108608 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:10:30,931 INFO autoreload 56082 140139396593472 Watching for file changes with StatReloader
+2021-09-10 23:12:35,880 INFO autoreload 56082 140139396593472 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:12:40,345 INFO autoreload 56458 139953181706048 Watching for file changes with StatReloader
+2021-09-10 23:18:18,563 INFO autoreload 56458 139953181706048 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:18:23,850 INFO autoreload 57483 139845425944384 Watching for file changes with StatReloader
+2021-09-10 23:20:18,284 INFO autoreload 57483 139845425944384 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:20:22,701 INFO autoreload 57762 139919975298880 Watching for file changes with StatReloader
+2021-09-10 23:20:50,643 INFO autoreload 57762 139919975298880 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:20:55,426 INFO autoreload 57770 140550576748352 Watching for file changes with StatReloader
+2021-09-10 23:21:25,018 INFO autoreload 57770 140550576748352 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:21:29,243 INFO autoreload 57931 139932584306496 Watching for file changes with StatReloader
+2021-09-10 23:21:57,051 INFO autoreload 57931 139932584306496 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:22:01,993 INFO autoreload 58075 140509617280832 Watching for file changes with StatReloader
+2021-09-10 23:22:23,137 INFO autoreload 58075 140509617280832 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:22:27,762 INFO autoreload 58250 140172942796608 Watching for file changes with StatReloader
+2021-09-10 23:22:37,001 INFO autoreload 58250 140172942796608 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:22:41,771 INFO autoreload 58345 140334020417344 Watching for file changes with StatReloader
+2021-09-10 23:23:13,835 INFO autoreload 58345 140334020417344 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:23:18,298 INFO autoreload 58469 140681724405568 Watching for file changes with StatReloader
+2021-09-10 23:23:25,376 INFO autoreload 58469 140681724405568 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:23:29,820 INFO autoreload 58487 139903676172096 Watching for file changes with StatReloader
+2021-09-10 23:25:52,145 INFO autoreload 58487 139903676172096 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:25:56,434 INFO autoreload 59079 140694957016896 Watching for file changes with StatReloader
+2021-09-10 23:26:11,555 INFO autoreload 59079 140694957016896 /media/dipto/DK/Projects/MY-personal/personal-website/templates/mainpage changed, reloading.
+2021-09-10 23:26:16,067 INFO autoreload 59206 140017715590976 Watching for file changes with StatReloader
+2021-09-10 23:52:42,493 INFO autoreload 59206 140017715590976 /media/dipto/DK/Projects/MY-personal/personal-website/PERSONAL_WEBSITE/settings.py changed, reloading.
+2021-09-10 23:52:48,175 INFO autoreload 63860 139628240381760 Watching for file changes with StatReloader
