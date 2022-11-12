@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/media/dipto/DK/Projects/MY-personal/personal-website/dj"
+VIRTUAL_ENV="/media/dipto/DK/Other/personal_website/dj"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
