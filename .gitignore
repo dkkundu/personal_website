@@ -96,6 +96,10 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+dj
+dj.
+Dj
+/dj
 
 # Temporary
 .tmp/
@@ -119,3 +123,5 @@ temp/
 # IDE
 .idea/
 .vscode/
+
+#this is the ignore file

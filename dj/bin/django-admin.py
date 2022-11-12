@@ -1,4 +1,4 @@
-#!/media/dipto/DK/Projects/MY-personal/personal-website/dj/bin/python3
+#!/media/dipto/DK/Other/personal_website/dj/bin/python3.8
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

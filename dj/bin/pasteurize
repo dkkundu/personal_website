@@ -1,4 +1,4 @@
-#!/media/dipto/DK/Projects/MY-personal/personal-website/dj/bin/python3
+#!/media/dipto/DK/Other/personal_website/dj/bin/python3.8
 # EASY-INSTALL-ENTRY-SCRIPT: 'future==0.18.2','console_scripts','pasteurize'
 __requires__ = 'future==0.18.2'
 import re
