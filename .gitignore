@@ -53,13 +53,13 @@ coverage.xml
 
 # Django stuff:
 *.log
-#local_settings.py
-#db.sqlite3
-#log/
-##logs/
-##media/
-##static/
-#uwsgi/
+local_settings.py
+db.sqlite3
+log/
+logs/
+media/
+static/
+uwsgi/
 backup/
 
 # Flask stuff:
