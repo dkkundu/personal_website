@@ -50,9 +50,9 @@ DB_CONFIG = {
     'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.postgresql'),
     'HOST': os.getenv('DB_HOST', '127.0.0.1'),
     'PORT': os.getenv('DB_PORT', 5432),
-    'NAME': os.getenv('DB_NAME', 'personal_website_db'),
-    'USER': os.getenv('DB_USER', 'personal_website_user'),
-    'PASSWORD': os.getenv('DB_PASS', 'personal_website_pass')
+    'NAME': os.getenv('DB_NAME', 'dk_db'),
+    'USER': os.getenv('DB_USER', 'bksp_user'),
+    'PASSWORD': os.getenv('DB_PASS', 'django')
 }
 
 # mysql defaults:

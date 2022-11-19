@@ -2,13 +2,13 @@
 # https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/uwsgi/
 
 # the base directory (full path)
-chdir           = /opt/PERSONAL_WEBSITE
+chdir           = /opt/personal_website
 
 # Django's wsgi file (this will be the folder name where wsgi.py and settings.py is)
 module          = PERSONAL_WEBSITE.wsgi
 
 # the virtualenv (full path)
-home            = /opt/PERSONAL_WEBSITE/venv
+home            = /opt/personal_website/venv
 
 # process-related settings
 master          = true
@@ -19,7 +19,7 @@ threads         = 2
 enable-threads  = True
 
 # the socket (use the full path to be safe
-socket          = /opt/PERSONAL_WEBSITE/uwsgi/uwsgi.sock
+socket          = /opt/personal_website/uwsgi/uwsgi.sock
 
 # ... with appropriate permissions - may be needed
 chmod-socket    = 666

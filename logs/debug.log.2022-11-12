@@ -1,0 +1,5 @@
+2022-11-12 20:18:56,927 INFO autoreload 18426 140314115012416 Watching for file changes with StatReloader
+2022-11-12 20:21:49,707 INFO autoreload 18426 140314115012416 /media/dipto/DK/Other/personal_website/PERSONAL_WEBSITE/settings.py changed, reloading.
+2022-11-12 20:21:51,934 INFO autoreload 19527 140358931793728 Watching for file changes with StatReloader
+2022-11-12 20:22:41,579 INFO autoreload 19527 140358931793728 /media/dipto/DK/Other/personal_website/templates/mainpage changed, reloading.
+2022-11-12 20:22:42,705 INFO autoreload 19642 139668002797376 Watching for file changes with StatReloader

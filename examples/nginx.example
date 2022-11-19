@@ -1,27 +1,27 @@
-upstream uwsgi {
-        server unix:/opt/PERSONAL_WEBSITE/uwsgi/uwsgi.sock;
+upstream DKKUNDU {
+        server unix:/opt/personal_website/uwsgi/uwsgi.sock;
 }
 
 server {
         listen 80;
-        server_name _;
+        server_name dkkundu.com;
 
-        access_log /opt/PERSONAL_WEBSITE/logs/access.log;
-        error_log /opt/PERSONAL_WEBSITE/logs/error.log;
+        access_log /opt/personal_website/logs/access.log;
+        error_log /opt/personal_website/logs/error.log;
 
         charset utf-8;
         client_max_body_size 16M;
 
         location /static {
-                alias /opt/PERSONAL_WEBSITE/static;
+                alias /opt/personal_website/static;
         }
 
         location /media {
-                alias /opt/PERSONAL_WEBSITE/media;
+                alias /opt/personal_website/media;
         }
 
         location / {
-                uwsgi_pass uwsgi;
+                uwsgi_pass DKKUNDU;
                 include uwsgi_params;
                 uwsgi_read_timeout 300s;
                 uwsgi_send_timeout 300s;
