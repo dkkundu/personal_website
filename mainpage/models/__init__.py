@@ -1,5 +1,6 @@
 from .project import Project
+from .cv import CV
 
 __all__ = [
-    Project
+    Project, CV
 ]

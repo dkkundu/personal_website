@@ -114,8 +114,13 @@
 							<p>I enjoy building everything from small business sites and landing pages to portfolio themes and rich interactive web apps. I love creating visually stunning and responsive websites. I always try to combine aesthetic with functional aspects, looking for the right balance to communicate without annoying.</p>
 							<p>Programming is a true passion of mine and that passion continually grows with every meaningful tech-related conversation I have, with every moment of clarity as I finally figure out a nagging issue on a project, and with every new concept, language, or framework I delve into.</p>
 							<p>I enjoy the collaborative nature of working on a team building a product. The feedback, discussion, and review in this environment brings out the best in each individual member, and is a crucial component in my own personal development. I'm ready to jump onto a supportive team and begin contributing.</p>
-
- 							<a href="https://drive.google.com/file/d/1sGwpuDIrjBoFX8BKRNW7lF71BQPiNPOt/view?usp=sharing" target="_blank" id="resume-effect"><i class="fa fa-3x fa-file-text-o" aria-hidden="true"></i> Click to view my resume.</a>
+                            {% if cv %}
+                                {% if cv.url %}
+                                <a href="{{ cv.url  }}" target="_blank" id="resume-effect"><i class="fa fa-3x fa-file-text-o" aria-hidden="true"></i> Click to view my resume.</a>
+                                 {% else %}
+                                 <a href="{{ cv.file.url  }}" target="_blank"><i class="fa fa-3x fa-file-text-o" aria-hidden="true"></i> Click to view CV.</a>
+                                {% endif %}
+                            {% endif %}
 						</div>
 					</div>
 				</div>
@@ -131,20 +136,31 @@
 				<h2 class="pfblock-title">MY SKILLS</h2>
 				<div class="pfblock-line"></div>
 
-				<div class="row">
-					<div  class="devicon-html5-plain  col-xs-15"><span>HTML</span></div>
-					<div  class="devicon-css3-plain   col-xs-15"><span>CSS</span></div>
-					<div  class="devicon-bootstrap-plain col-xs-15"><span>BOOTSTRAP</span></div>
-					<div  class="devicon-jquery-plain col-xs-15"><span>JQUERY</span></div>
-					<div  class="devicon-javascript-plain  col-xs-15"><span>JAVASCRIPT</span></div>
-				</div>
-				<div class="row">
-					<div  class="devicon-d3js-plain  col-xs-15"><span>D3</span></div>
-					<div  class="devicon-react-original  col-xs-15"><span>REACT</span></div>
-					<div  class="devicon-nodejs-plain  col-xs-15"><span>NODE</span></div>
-					<div  class="devicon-python-plain  col-xs-15"><span>PYTHON</span></div>
-					<div  class="devicon-django-plain  col-xs-15"><span>DJANGO</span></div>
-				</div>
+            <div class="row">
+                <div  class="devicon-python-plain   col-xs-15"><span>PYTHON</span></div>
+                <div  class="devicon-django-plain  col-xs-15"><span>DJANGO</span></div>
+
+                <div  class="devicon-django-plain-wordmark col-xs-15"><span>REST API</span></div>
+                <div  class="devicon-postgresql-plain  col-xs-15"><span>PostgresSQL</span></div>
+                <div  class="devicon-mysql-plain  col-xs-15"><span>MySQL</span></div>
+			</div>
+            <div class="row">
+                <div  class="devicon-amazonwebservices-original col-xs-15"><span>AWS</span></div>
+                <div  class="devicon-linux-plain col-xs-15"><span>Linux Server</span></div>
+
+                <div  class="devicon-jenkins-line col-xs-15"><span>GitHub Action (CI/CD)</span></div>
+                <div  class="devicon-git-plain col-xs-15"><span>Git</span></div>
+                <div  class="devicon-github-original  col-xs-15"><span>GitHub</span></div>
+			</div>
+
+			<div class="row">
+                <div  class="devicon-vuejs-plain col-xs-15"><span>VueJs</span></div>
+                <div  class="devicon-jquery-plain col-xs-15"><span>JQUERY</span></div>
+                <div  class="devicon-bootstrap-plain col-xs-15"><span>BOOTSTRAP</span></div>
+                <div  class="devicon-html5-plain  col-xs-15"><span>HTML</span></div>
+                <div  class="devicon-css3-plain   col-xs-15"><span>CSS</span></div>
+			</div>
+
 
 			</div>
 		</div>

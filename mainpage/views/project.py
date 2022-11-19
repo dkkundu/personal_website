@@ -5,7 +5,7 @@ from django.views.generic.edit import FormView
 from django.contrib.messages.views import SuccessMessageMixin
 from django.core.mail import send_mail, get_connection
 from mainpage.forms import ContactForm
-from mainpage.models import Project
+from mainpage.models import Project, CV
 
 
 class ProjectListAndFormView(SuccessMessageMixin, ListView, FormView):
@@ -19,6 +19,16 @@ class ProjectListAndFormView(SuccessMessageMixin, ListView, FormView):
     form_class = ContactForm
     success_url = '/'  # After submiting the form keep staying on the same url
     success_message = 'Your Form has been successfully submitted!'
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(ProjectListAndFormView, self).get_context_data(*args, **kwargs)
+        try:
+            context["cv"] = CV.objects.get(is_active=True)
+        except Exception as e:
+            context["cv"] = None
+            print(e)
+
+        return context
 
     def form_valid(self, form):
         # This method is called when valid form data has been POSTed.
