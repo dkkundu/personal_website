@@ -11,7 +11,7 @@ services:
     build:
       context: .
     ports:
-      - "9000:9000"
+      - "8000:8000"
   nginx:
     build: ./nginx
     volumes:
@@ -20,7 +20,7 @@ services:
       - /etc/letsencrypt:/etc/letsencrypt
       - /var/www/certbot:/var/www/certbot
     ports:
-      - "9001:80"
-      - "9002:443"
+      - "80:80"
+      - "443:443"
     depends_on:
       - dkkundu
