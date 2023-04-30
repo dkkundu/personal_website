@@ -5,12 +5,15 @@ __pycache__/
 
 # C extensions
 *.so
+node_modules
+/node_modules
+node_modules/
 
 # Distribution / packaging
 .Python
 build/
 develop-eggs/
-dist/
+
 downloads/
 eggs/
 .eggs/
@@ -24,7 +27,7 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
+bd_geo_codes.csv
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
@@ -50,7 +53,8 @@ coverage.xml
 # Translations
 *.mo
 *.pot
-
+staticfiles/src/vue/
+/staticfiles/src/vue/
 # Django stuff:
 *.log
 local_settings.py
@@ -61,14 +65,15 @@ media/
 static/
 uwsgi/
 backup/
-
+*.psql.gz
+*.gz
 # Flask stuff:
 instance/
 .webassets-cache
 
 # Scrapy stuff:
 .scrapy
-
+tmp\\db2.psql
 # Sphinx documentation
 docs/_build/
 
@@ -97,16 +102,18 @@ ENV/
 env.bak/
 venv.bak/
 dj
-dj.
-Dj
-/dj
+.dj
+dj/
+DJ
+dj.bak/
 
 # Temporary
 .tmp/
 .temp/
 tmp/
 temp/
-
+staticfiles/src/vue/
+/staticfiles/src/vue/
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -123,5 +130,3 @@ temp/
 # IDE
 .idea/
 .vscode/
-
-#this is the ignore file
