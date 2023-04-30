@@ -37,7 +37,6 @@ odfpy==1.4.1
 openpyxl==3.0.7
 Pillow==8.2.0
 pipdeptree==2.0.0
-pkg_resources==0.0.0
 prometheus-client==0.10.0
 prompt-toolkit==3.0.18
 psycopg2-binary==2.8.6
